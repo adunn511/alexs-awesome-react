@@ -21693,26 +21693,61 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var HelloWorld = _react2.default.createClass({
-	displayName: "HelloWorld",
+//import HelloWorld from "components/HelloWorld";
+__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"dev/components/HelloWorld\""); e.code = 'MODULE_NOT_FOUND';; throw e; }()));
 
-	render: function render() {
-		return _react2.default.createElement(
-			"p",
-			null,
-			"Hello, ",
-			this.props.greetTarget,
-			"!"
-		);
+/*var HelloWorld = React.createClass({
+	render: function() {
+	return (
+	<p>Hello, {this.props.greetTarget}!</p>
+	);
+
 	}
-});
+});*/
+
+var destination = document.querySelector("#container");
 
 _reactDom2.default.render(_react2.default.createElement(
 	"div",
 	null,
-	_react2.default.createElement(HelloWorld, { greetTarget: "Batman" }),
-	_react2.default.createElement(HelloWorld, { greetTarget: "Iron Man" })
-), document.querySelector("#container"));
+	_react2.default.createElement(
+		"h3",
+		null,
+		_react2.default.createElement(
+			"i",
+			null,
+			"Batman!"
+		)
+	),
+	_react2.default.createElement(
+		"h3",
+		null,
+		_react2.default.createElement(
+			"i",
+			null,
+			"Iron Man"
+		)
+	),
+	_react2.default.createElement(
+		"h3",
+		null,
+		_react2.default.createElement(
+			"i",
+			null,
+			"Nicholas Cage"
+		)
+	),
+	_react2.default.createElement(
+		"h3",
+		null,
+		_react2.default.createElement(
+			"i",
+			null,
+			"Mega Man"
+		)
+	),
+	_react2.default.createElement(HelloWorld, null)
+), destination);
 
 /***/ })
 /******/ ]);
